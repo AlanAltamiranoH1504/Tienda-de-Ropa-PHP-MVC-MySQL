@@ -1,0 +1,340 @@
+/*Estilos generales*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif, "Helvetica Neue", Arial;
+}
+body{
+    background: url(../Imagenes/bg.png);
+}
+a{
+    color: #01b1ea;
+}
+a:hover{
+    color: #5555;
+}
+a:visited{
+    color: #01b1ea;
+}
+
+#container{
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* Estilos al header */
+#header{
+    height: 145px;
+    margin: 0 auto;
+    background: #686565;
+    width: 80%;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#logo{
+    padding: 6px;
+    float: left;
+}
+#logo a{
+    float: left;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    margin-top: 35px;
+    margin-left: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 500ms;
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    font-weight: bold;
+}
+#logo a:hover{
+    color: black;
+    text-shadow: 3px 3px 3px #d6d3d3;
+}
+#logo img{
+    height: 100px;
+    margin-bottom: -80px;
+    float: left;
+}
+
+/*Menu*/
+#menu{
+    clear: both;
+    background-color: dimgray;
+    border: solid 1px black;
+    color: white;
+    height: 55px;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+#menu a:hover{
+    color: black;
+    transition: all 500ms;
+    border-radius: 5px;
+    /*text-shadow: 1px 1px 1px white;*/
+    /*background: #bababa;*/
+}
+#menu ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-left: 25px;
+}
+#menu ul li{
+    float: left;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-right: 1px solid white;
+}
+#menu ul li:hover{
+    color: rebeccapurple;
+}
+
+/*Content*/
+#content{
+    margin: 0px auto;
+    overflow: hidden;
+    background: white;
+}
+
+/*Barra lateral*/
+#lateral{
+    width: 22%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    min-height: 500px;
+}
+#lateral .block_aside{
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+}
+#lateral h3{
+    display: block;
+    color: #222;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #E1E1E1;
+    border-bottom: solid 2px black;
+}
+
+/*Estilos formularios*/
+label, p input[type="email"],
+p input[type="password"],
+p input[type="text"],
+select{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+label,p input[type="submit"],
+p input[type="button"],
+button{
+    display: block;
+    margin-top: 10px;
+}
+p input[type="email"],
+p input[type="password"],
+p input[type="text"],
+select{
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px black inset;
+    background: white;
+    padding: 2px;
+    transition: all 300ms;
+}
+p input[type="email"]:focus,
+p input[type="password"]:focus,
+p input[type="text"]:focus,
+select:focus{
+    border: solid 1px #1579b5;
+}
+
+p input[type="submit"],
+p input[type="button"],
+button{
+    display: block;
+    border-radius: 2px;
+    width: auto;
+    padding: 5px;
+    color: white;
+    background: dimgray;
+    border: solid 1px #E1E1E1;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.block_aside ul li a{
+    text-decoration: none;
+    color: white;
+    border: black solid 1px;
+    background: #686565;
+    border-radius: 5px;
+}
+.block_aside ul li:hover{
+    color: white;
+}
+.block_aside ul li{
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+}
+form{
+    width: 70%;
+    margin: 0px auto;
+}
+
+/*Parte Central*/
+#central{
+    width: 72%;
+    float: right;
+    border: 1px solid black;
+    box-shadow: -5px -1px 5px #686565;
+    padding: 20px;
+    min-height: 500px;
+}
+#central h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    /*margin-top: 20px;*/
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #686565;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: solid 1px black;
+}
+.product{
+    width: 30%;
+    border-right: 1px solid #ccc;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 230px;
+}
+.product h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.product a{
+    text-decoration: none;
+    color: forestgreen;
+    border: solid 1px forestgreen;
+    background: #55ed55;
+    color: black;
+    border-radius: 5px;
+}
+.product p{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: red;
+}
+.product a:hover{
+    text-decoration: none;
+    color: white;
+}
+.product img{
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+#footer{
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+    border-top: solid 5px black;
+}
+
+/*Tablas*/
+table{
+    width: 100%;
+    border: solid 1px black;
+    text-align: center;
+}
+table td{
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    padding: 2px;
+}
+table th{
+    background: #686565;
+    color: white;
+}
+
+/*Botones de agregar, editar y eliminar */
+/* Botón de Agregar */
+.btn-agregar {
+    background-color: #28a745; /* Verde */
+    color: white !important;
+    border: 1px #28a745;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-agregar:hover {
+    background-color: #218838;
+    color: white;
+}
+
+/* Botón de Editar */
+.btn-editar {
+    background-color: #ffc107; /* Amarillo */
+    color: white !important;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-editar:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+/* Botón de Eliminar */
+.btn-eliminar {
+    background-color: #dc3545; /* Rojo */
+    color: white !important;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+    color: white;
+}
